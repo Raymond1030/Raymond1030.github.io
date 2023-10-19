@@ -3,71 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简介</title>
+    <title>我的个人网页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
         }
 
-        .header {
-            width: 100%;
-            padding: 20px 0;
-            background-color: white;
+        header {
+            background-color: #f7f7f7;
+            padding: 1rem;
             text-align: center;
         }
 
-        .header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        .header p {
-            margin-top: 10px;
-        }
-
-        .main-content {
-            width: 100%;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footer {
-            width: 100%;
-            padding: 20px 0;
-            background-color: white;
+        nav {
+            background-color: #333;
+            color: white;
             text-align: center;
-            margin-top: 50px;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .content .intro {
+            flex: 1;
+        }
+
+        .content .photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .content .photo img {
+            max-width: 90%;
+            border-radius: 8px;
+        }
+
+        .detailed-intro {
+            padding: 2rem;
+            background-color: #f7f7f7;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>我的个人网页</h1>
+    </header>
 
-<div class="header">
-    <h1>姓名</h1>
-    <p>我的个人简介</p>
-    <p>日期</p>
-</div>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#works">我的作品</a>
+    </nav>
 
-<div class="main-content">
-    <img src="你的图片链接" alt="个人照片">
-</div>
+    <div class="content">
+        <div class="intro">
+            <h2>张三</h2>
+            <p>这里是我的简短介绍...</p>
+        </div>
 
-<div class="footer">
-    <p>版权所有 © 2023</p>
-</div>
+        <div class="photo">
+            <img src="your_photo_link_here.jpg" alt="我的照片">
+        </div>
+    </div>
+
+    <div class="detailed-intro">
+        <h2>关于我</h2>
+        <p>这里是我的详细介绍...</p>
+    </div>
 
 </body>
 </html>
